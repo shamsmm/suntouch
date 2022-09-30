@@ -6,7 +6,7 @@ import {Link, NavLink} from "react-router-dom";
 function UserNavigation({ handleLogout, user}) {
 
     return (
-        <Navbar bg="primary" expand="lg" variant="dark" sticky="top" >
+        <Navbar bg="primary" expand="lg" variant="dark" sticky="top"  className={"navbar-shadow"}>
             <Container>
                 <Navbar.Brand as={Link} to={"/"} >
                     <img

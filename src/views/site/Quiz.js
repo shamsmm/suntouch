@@ -1,15 +1,15 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import {Col, Container, Row} from "react-bootstrap";
 import {Helmet} from "react-helmet";
+import { motion } from 'framer-motion';
 
-function Home(props) {
+function Quiz(props) {
 
     return (
         <motion.div initial={{opacity: 0}} animate={{opacity: 1}} >
             <Container>
                 <Helmet>
-                    <title>Team Sun Touch | Home</title>
+                    <title>Team Sun Touch | Short Quiz</title>
                 </Helmet>
                 <Row className={"justify-content-center"}>
                     <Col lg={8}>
@@ -24,4 +24,4 @@ function Home(props) {
     );
 }
 
-export default Home;
+export default Quiz;
