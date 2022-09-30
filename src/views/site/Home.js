@@ -4,6 +4,7 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import {ArrowRight} from "react-bootstrap-icons";
+import storyCover from "../../assets/images/cover.jpg";
 
 function Home(props) {
 
@@ -18,7 +19,7 @@ function Home(props) {
                 <Container className={"mt-5"}>
                     <Row className={"gy-3 pt-3"}>
                         <Col lg={6}>
-                            <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/8876990/843792_370983.jpeg"} className={"w-75"}/>
+                            <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/8876990/843792_370983.jpeg"} className={"w-75 rounded-3 shadow-lg"}/>
                         </Col>
                         <Col lg={6}>
                             <p>
@@ -33,24 +34,21 @@ function Home(props) {
                             </p>
                         </Col>
                         <Col lg={6}>
-                            <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/8876990/514902_408570.jpeg"} className={"w-75"}/>
+                            <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/8876990/514902_408570.jpeg"} className={"w-75 rounded-3 shadow-lg"}/>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <div className={"text-center px-3 py-5 mt-3 text-light"} style={{background: "linear-gradient(to bottom right, hsl(281deg 100% 53%) 0%, hsl(55deg 96% 46%) 100%)"}}>
+            <div className={"text-center px-3 py-5 mt-3 text-light"} style={{background: "linear-gradient(to right bottom, rgb(255 59 15) 0%, rgb(230, 211, 5) 100%)"}}>
                 <h1>Story</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta.</p>
-                <Link to={"/story"} size={"lg"} className={"btn btn-success rounded-pill"} >
+                <Link to={"/story"} size={"lg"} className={"btn btn-outline-light rounded-pill"} >
                     View Story <ArrowRight/>
                 </Link>
                 <Container className={"mt-5"}>
                     <Row className={"justify-content-center gy-5"}>
                         <Col lg={6}>
-                            <img src={"https://picsum.photos/600"} className={"rounded-3"} alt={""} width={500}/>
-                        </Col>
-                        <Col lg={6}>
-                            <img src={"https://picsum.photos/600"} className={"rounded-3"} alt={""} width={500}/>
+                            <img src={storyCover} className={"rounded-3 shadow-lg"} alt={""} height={500}/>
                         </Col>
                     </Row>
                 </Container>
@@ -58,16 +56,19 @@ function Home(props) {
             <div className={"text-center px-3 py-5 mt-3"} >
                 <h1>Educational Videos</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta.</p>
-                <Link to={"/videos"} size={"lg"} className={"btn btn-success rounded-pill"} >
+                <Link to={"/videos"} size={"lg"} className={"btn btn-outline-dark rounded-pill"} >
                     View All Videos <ArrowRight/>
                 </Link>
                 <Container className={"mt-5"}>
                     <Row className={"justify-content-center gy-5"}>
-                        <Col lg={6}>
-                            <img src={"https://picsum.photos/600"} className={"rounded-3"} alt={""} width={500}/>
-                        </Col>
-                        <Col lg={6}>
-                            <img src={"https://picsum.photos/600"} className={"rounded-3"} alt={""} width={500}/>
+                        <Col lg={8}>
+                            <div className="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/xPkxG4qos7g"
+                                    title="YouTube video"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

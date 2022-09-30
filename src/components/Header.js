@@ -11,7 +11,7 @@ function Header(props) {
             </Row>
             <Row className={"justify-content-center"}>
                 <Col lg={8} md={8}>
-                    <p className={"display-6"}>Parker Solar Probe</p>
+                    <p className={"display-6"}>Humanity's First Visit to a Star</p>
                 </Col>
             </Row>
         </Container>
