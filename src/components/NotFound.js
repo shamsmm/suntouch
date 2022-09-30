@@ -2,11 +2,12 @@ import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
+import { motion } from 'framer-motion';
 
 function NotFound() {
 
     return (
-        <div>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} >
             <Helmet>
                 <title>Not Found!</title>
             </Helmet>
@@ -21,7 +22,7 @@ function NotFound() {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     );
 }
 

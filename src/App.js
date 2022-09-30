@@ -15,9 +15,12 @@ function App() {
     const location = useLocation();
 
     useLayoutEffect(() => {
-      document
-          .documentElement
-          .scrollTo(0, 0);
+      if (window.scrollY > 0) {
+        document
+            .documentElement
+            .scrollTo(0, document.getElementById('main')?.offsetTop + 512);
+      }
+
     }, [location.pathname]);
 
     return children;
@@ -38,7 +41,7 @@ function App() {
                   <br/>
                   <Header />
                 </Row>
-                <Row className={"w-100 m-0 p-0"}>
+                <Row className={"w-100 m-0 p-0 pt-5"}>
                   <AnimatedRoutes />
                 </Row>
               </Container>

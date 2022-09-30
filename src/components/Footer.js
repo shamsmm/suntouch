@@ -9,7 +9,7 @@ function Footer(props) {
             <Row>
                <Col className={"text-start"}>
                     <span>
-                        Teams Sun Touch © 2022 - All Rights Reserved.
+                        Team Sun Touch © 2022 - All Rights Reserved.
                     </span>
                </Col>
                 <Col className={"text-end"}>

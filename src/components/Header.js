@@ -3,15 +3,16 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function Header(props) {
     return (
-        <Container  className={"my-5"}>
+        <Container className={"header"} >
             <Row className={"justify-content-center"}>
-                <Col lg={6} >
-                    Header
+                <Col lg={8} md={8}>
+                    <h1 style={{fontSize: "3.5rem"}}>Parker Solar Probe</h1>
                 </Col>
             </Row>
-            <br/>
-            <Row className={"justify-content-center gy-5"}>
-                Buttons
+            <Row className={"justify-content-center"}>
+                <Col lg={8} md={8}>
+                    <p className={"display-6"}>Parker Solar Probe</p>
+                </Col>
             </Row>
         </Container>
     );
