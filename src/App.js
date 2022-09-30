@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import {Helmet} from "react-helmet";
+import {useLayoutEffect} from "react";
+import Navigation from "./components/Navigation";
+import Header from "./components/Header";
+import {Container, Row} from "react-bootstrap";
+import Footer from "./components/Footer";
+import AnimatedRoutes from "./routing/AnimatedRoutes";
+import './scss/style.scss';
 
 function App() {
+
+  // Auto scroll to beginning on page change
+  const ScrollWrapper = ({children}) => {
+    const location = useLocation();
+
+    useLayoutEffect(() => {
+      document
+          .documentElement
+          .scrollTo(0, 0);
+    }, [location.pathname]);
+
+    return children;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+
+          <Helmet>
+            <title>Team Sun Touch</title>
+          </Helmet>
+
+          <ScrollWrapper>
+            <div id={"main"}>
+              <Container fluid={true} className={"p-0 mb-5"}>
+                <Row className={"w-100 m-0 p-0"}>
+                  <Navigation/>
+                  <br/>
+                  <Header />
+                </Row>
+                <Row className={"w-100 m-0 p-0"}>
+                  <AnimatedRoutes />
+                </Row>
+              </Container>
+              <Footer/>
+            </div>
+          </ScrollWrapper>
+      </Router>
   );
 }
 
