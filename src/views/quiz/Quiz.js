@@ -21,7 +21,7 @@ function Quiz(props) {
                     <Col lg={8}>
                         <h2 className={"text-center mb-5"}>Take a small Quiz ;)</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta. Aenean condimentum, lorem in pulvinar ullamcorper, libero elit ornare enim, quis fermentum felis arcu nec orci. Vestibulum ac diam nec risus mattis tempus. Donec sollicitudin pharetra dapibus. Aliquam erat volutpat. Etiam sem dolor, ultrices vitae luctus non, mattis quis risus. Nullam ullamcorper ullamcorper orci, eget placerat diam. Maecenas tortor tortor, volutpat mollis mauris ut, hendrerit varius elit. Nullam at diam orci. Suspendisse quis dignissim odio. In interdum vehicula orci malesuada pharetra. Aliquam quis leo odio. Donec lobortis nec tellus vitae fermentum. Cras a dui nulla. Sed tempor libero tincidunt ex congue molestie.
+                            An evaluation quiz to make the journey more interactive and enjoyable.
                         </p>
                         <Button size={"lg"} className={"rounded-pill mt-3"} onClick={() => {
                             setState({...state, step: 1})

@@ -33,7 +33,7 @@ function Videos(props) {
                             <h2>Suggested Video from official NASA</h2>
                             <div className="ratio ratio-16x9 mt-3">
                                 <iframe
-                                    src="https://www.youtube.com/embed/xPkxG4qos7g"
+                                    src="https://www.youtube.com/embed/7SQ3kLhXpS4"
                                     title="YouTube video"
                                     allowFullScreen
                                 ></iframe>
@@ -43,7 +43,7 @@ function Videos(props) {
                             <h2>Young Audience reaction of our Story</h2>
                             <div className="ratio ratio-16x9 mt-3">
                                 <iframe
-                                    src="https://www.youtube.com/embed/xPkxG4qos7g"
+                                    src="https://www.youtube.com/embed/L_oQGIPODHs"
                                     title="YouTube video"
                                     allowFullScreen
                                 ></iframe>

@@ -38,8 +38,8 @@ function Story(props) {
                 <Row className={"justify-content-center"}>
                     <Col lg={8}>
                         <h2 className={"text-center mb-3"}>Story</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta. Aenean condimentum, lorem in pulvinar ullamcorper, libero elit ornare enim, quis fermentum felis arcu nec orci.
+                        <p className={"fw-bold"}>
+                            Our story is an opening gate to solar parker probe. It simplifies the challenges of solar parker probe and it indicates the great efforts that exerted through the whole challenge.
                         </p>
                     </Col>
                 </Row>

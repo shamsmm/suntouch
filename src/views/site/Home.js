@@ -22,26 +22,33 @@ function Home(props) {
                             <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/8876990/843792_370983.jpeg"} className={"w-75 rounded-3 shadow-lg"}/>
                         </Col>
                         <Col lg={6}>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta. Aenean condimentum, lorem in pulvinar ullamcorper, libero elit ornare enim, quis fermentum felis arcu nec orci. Vestibulum ac diam nec risus mattis tempus. Donec sollicitudin pharetra dapibus. Aliquam erat volutpat. Etiam sem dolor, ultrices vitae luctus non, mattis quis risus. Nullam ullamcorper ullamcorper orci, eget placerat diam. Maecenas tortor tortor, volutpat mollis mauris ut, hendrerit varius elit. Nullam at diam orci. Suspendisse quis dignissim odio. In interdum vehicula orci malesuada pharetra. Aliquam quis leo odio. Donec lobortis nec tellus vitae fermentum. Cras a dui nulla. Sed tempor libero tincidunt ex congue molestie.
-                            </p>
+                            <h2>The Launching</h2>
+                            <ul className={"text-start"}><li><strong>Launch:</strong>&nbsp;Aug. 12, 2018</li><li><strong>Launch Site:</strong>&nbsp;Cape Canaveral Air Force Station, Florida</li><li><strong>Launch Vehicle:</strong>&nbsp;Delta IV-Heavy with Upper Stage</li></ul>
                         </Col>
                     </Row>
                     <Row className={"gy-3 pt-5"}>
                         <Col lg={6}>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta. Aenean condimentum, lorem in pulvinar ullamcorper, libero elit ornare enim, quis fermentum felis arcu nec orci. Vestibulum ac diam nec risus mattis tempus. Donec sollicitudin pharetra dapibus. Aliquam erat volutpat. Etiam sem dolor, ultrices vitae luctus non, mattis quis risus. Nullam ullamcorper ullamcorper orci, eget placerat diam. Maecenas tortor tortor, volutpat mollis mauris ut, hendrerit varius elit. Nullam at diam orci. Suspendisse quis dignissim odio. In interdum vehicula orci malesuada pharetra. Aliquam quis leo odio. Donec lobortis nec tellus vitae fermentum. Cras a dui nulla. Sed tempor libero tincidunt ex congue molestie.
-                            </p>
+                            <h2>The First Touch</h2>
+                            Parker Solar Probe performs its scientific investigations in a hazardous region of intense heat and solar radiation. The spacecraft will fly close enough to the Sun to watch the solar wind speed up from subsonic to supersonic, and it will fly though the birthplace of the highest-energy solar particles.
                         </Col>
                         <Col lg={6}>
                             <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/8876990/514902_408570.jpeg"} className={"w-75 rounded-3 shadow-lg"}/>
+                        </Col>
+                    </Row>
+                    <Row className={"gy-3 pt-5"}>
+                        <Col lg={6}>
+                            <img src={"https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/8876990/843792_370983.jpeg"} className={"w-75 rounded-3 shadow-lg"}/>
+                        </Col>
+                        <Col lg={6}>
+                            <h2>Teaming for Success</h2>
+                            <p>Parker Solar Probe is part of NASA’s Living With a Star program to explore aspects of the Sun-Earth system that directly affect life and society. The Living With a Star flight program is managed by the agency’s Goddard Space Flight Center in Greenbelt, Maryland, for NASA’s Science Mission Directorate in Washington. The Johns Hopkins University Applied Physics Laboratory (APL) in Laurel, Maryland, manages the mission for NASA. APL designed, built, and operates the spacecraft.</p>
                         </Col>
                     </Row>
                 </Container>
             </div>
             <div className={"text-center px-3 py-5 mt-3 text-light"} style={{background: "linear-gradient(to right bottom, rgb(255 59 15) 0%, rgb(230, 211, 5) 100%)"}}>
                 <h1>Story</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta.</p>
+                <p>Our story is an opening gate to solar parker probe. It simplifies the challenges of solar parker probe and it indicates the great efforts that exerted through the whole challenge.</p>
                 <Link to={"/story"} size={"lg"} className={"btn btn-outline-light rounded-pill"} >
                     View Story <ArrowRight/>
                 </Link>
@@ -55,7 +62,7 @@ function Home(props) {
             </div>
             <div className={"text-center px-3 py-5 mt-3"} >
                 <h1>Educational Videos</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis egestas porta.</p>
+                <p>These are our visual references to the audience; it indicates how the challenge is a great milestone in our space explorations history.</p>
                 <Link to={"/videos"} size={"lg"} className={"btn btn-outline-dark rounded-pill"} >
                     View All Videos <ArrowRight/>
                 </Link>
