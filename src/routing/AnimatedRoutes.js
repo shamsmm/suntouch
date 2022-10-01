@@ -7,6 +7,7 @@ import About from "../views/site/About";
 import Story from "../views/site/Story";
 import Videos from "../views/site/Videos";
 import Quiz from "../views/quiz/Quiz";
+import Scientific from "../views/site/Scientific";
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -19,6 +20,7 @@ function AnimatedRoutes() {
                 <Route path={"/story"} element={<Story />} />
                 <Route path={"/quiz"} element={<Quiz />} />
                 <Route path={"/videos"} element={<Videos />} />
+                <Route path={"/scientific"} element={<Scientific />} />
                 <Route path={"/about"} element={<About />} />
                 <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
                 <Route path={"*"}  element={<NotFound />} />

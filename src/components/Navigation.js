@@ -33,6 +33,9 @@ function UserNavigation({ handleLogout, user}) {
                         <Nav.Link as={NavLink} to={"/videos"} >
                             Videos
                         </Nav.Link>
+                        <Nav.Link as={NavLink} to={"/scientific"} >
+                            Scientific
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
