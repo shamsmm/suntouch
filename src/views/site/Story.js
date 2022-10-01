@@ -52,13 +52,16 @@ function Story(props) {
             <Container>
                 <Row className={"justify-content-center"}>
                     <Col lg={8}>
-                        <h2 className={"text-center mb-3 congrats"} >Congratulations on finishing this story!</h2>
+                        <h2 className={"text-center mb-5 congrats"} >Congratulations on finishing this story!</h2>
                         <p>
                             Now what about taking a quick quiz to see how much information you gained in a buttery-smooth way throughout this story :)
                         </p>
                         <p>
                             Taking the quiz on the mobile app can give you prizes!!!
                         </p>
+                        <Link to={"/quiz"} size={"lg"} className={"btn btn-outline-dark rounded-pill mx-auto mt-3"} >
+                            Take Quiz & Win prizes! <ArrowRight/>
+                        </Link>
                     </Col>
                 </Row>
             </Container>

@@ -6,7 +6,7 @@ import NotFound from "../components/NotFound";
 import About from "../views/site/About";
 import Story from "../views/site/Story";
 import Videos from "../views/site/Videos";
-import Quiz from "../views/site/Quiz";
+import Quiz from "../views/quiz/Quiz";
 
 function AnimatedRoutes() {
     const location = useLocation();
